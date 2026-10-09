@@ -80,10 +80,11 @@ plastic_data_all <- data4 %>%
 ### Ex 1.
 
 ```{r Ex1, message = FALSE}
-# Write your code here to answer exercise 1
+region_counts <- table(plastic_data_all$region)
 
 
-
+max_region <- region_counts[which.max(region_counts)]
+print(max_region)
 ```
 
 
